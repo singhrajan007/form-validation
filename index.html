@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Validation</h1>
+        <div class="message">
+        </div>
+        <form id="myForm" method="post" action="">
+            <div class="formElement">
+                <div class="col25">
+                    <label for="name">Name:</label>
+                </div>
+                <div class="col70">
+                    <input type="text" id="name" name="name" required>
+                </div>
+            </div>
+            <div class="formElement">
+                <div class="col25">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col70">
+                    <input type="email" id="email" name="email" required>
+                </div>                
+            </div>
+            <div class="formElement">
+                <div class="col25">
+                    <label for= "phone">Phone:</label>
+                </div>
+                <div class="col70">
+                    <input type="tel" id="phone" name="phone" required>
+                </div> 
+            </div>
+            <div class="formElement">
+                <div class="col25">
+                    <label for= "password">Password:</label>
+                </div>
+                <div class="col70">
+                    <input type="password" id="password" name="password" required>
+                    <span class="password-showhide"><span class="trigger-password">Show</span></span>
+                </div>
+                
+            </div>
+            <div class="formElement">
+                <div class="col25">
+                    <label for="confirmPassword">Confirm Password:</label>
+                </div>
+                <div class="col70">
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <span class="confirm-password-showhide"><span class="trigger-password">Show</span></span>
+                </div>     
+            </div>
+            <div class="formElement">
+                <input id="submit" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
