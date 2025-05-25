@@ -51,6 +51,8 @@ h1{
 }
 
 .col70 {
+    display: inline-flex;
+    align-items: center;
   float: left;
   width: 70%;
   margin-top: 6px;
@@ -76,7 +78,7 @@ input[type="tel"]{
 
 span{
     font-size: 14px;
-    margin-left: 10px;
+    margin-left: 2px;
 }
 
 .formElement input:focus{
