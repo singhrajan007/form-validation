@@ -28,7 +28,7 @@
             // Validate Password
             const password = /^(?=.*[A-Za-z])(?=.*[-!@._*#%])(?=.*\d)[A-Za-z\d-!@._*#%]{8,16}$/;
             if (!password.test($("#password").val())) {
-                error += "Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number.\n";
+                error += "Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one special character, and one number.\n";
                 isValid = false;
             }
                 
