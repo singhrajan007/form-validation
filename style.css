@@ -68,12 +68,18 @@ label{
 input[type="text"],
 input[type="email"],
 input[type="password"],
-input[type="tel"]{
+input[type="number"]{
     width: 90%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 
 span{
